@@ -1,8 +1,8 @@
 {
   "name": "fsproperty-landing-area-page",
   "version": "0.0.0",
-  "timetag": "250203-1941",
-  "timestamp": "2025.02.03 19:41:02 +0300",
+  "timetag": "250203-2155",
+  "timestamp": "2025.02.03 21:55:07 +0300",
   "changed": "2025.02.03, 20:22",
   "description": "FS-Property Yupi landing page project for AREA membership",
   "main": "index.html",
