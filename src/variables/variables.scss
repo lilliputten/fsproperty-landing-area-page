@@ -1,0 +1,38 @@
+// Colors...
+
+$appId: 'for-owners';
+$appFolder: 'landing-#{$appId}';
+$uploadsFolder: 'uploads/#{$appFolder}';
+
+$bgDarkColor: #131014;
+$headerDarkColor: #404040;
+$grayLightColor: #cccccc;
+$grayBrightColor: #d9d9d9;
+$moodyMediumColor: #78909c;
+$goldColor: #a39675;
+$buttonRedColor: #8c1515;
+
+$whyDarkColor: #232023;
+$servicesDarkColor: #272a2f;
+
+// Fonts...
+
+$softFont: MinionPro-Regular, serif;
+$softFontIt: MinionPro-It, serif;
+
+// Timeouts...
+
+$transitionTimeMs: 250ms;
+$animationTimeMs: 500ms;
+$disappearTimeMs: 1000ms;
+
+// Adaptive layouts...
+
+$smTreshold: 768px;
+$mdTreshold: 992px;
+$lgTreshold: 1200px;
+
+// Export to TS code (TODO)...
+
+// Blocks
+$blockRootNode: '.t229';

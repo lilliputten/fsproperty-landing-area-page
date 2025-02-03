@@ -1,0 +1,36 @@
+@charset "UTF-8";
+html, body {  margin:0; padding:0; height:100%; } 
+body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; line-height: 1.42857; color: #333333; }
+
+/*---Global tags---*/
+img {border:0;}
+
+h1 {  
+  font-size: 20px;
+  margin: 0px 0px 30px 0px;
+  padding: 0px; 
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0px 0px 30px 0px;
+  padding: 0px; 
+}
+
+section{display:block;}
+
+.cl {clear:both; font-size:1px; height: 1px; overflow: hidden;}
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+	
+.content-page {width:528pt; margin:50px auto;}	
+
+.property-list {margin: 0px 0px 30px 0px;}
+.property-list table{width:100%;}
+.property-list td {width: 50%; border-bottom: 1px solid #EEEEEE; padding: 5px;}
+.property-list .attr-value {text-align: right;}
+
+.fl_left {float:left;}
+.fl_right {float:right;}
+.menu_min {width:50%;}
+.info { padding: 0 20px 0 0}
+.info .image {margin-bottom: 10px;}

@@ -1,0 +1,10 @@
+@mixin activeLink {
+  button,
+  a {
+    transition: all var(--transitionTimeMs);
+    &:hover {
+      opacity: 0.75;
+      text-decoration: underline !important;
+    }
+  }
+}

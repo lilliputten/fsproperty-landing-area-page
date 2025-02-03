@@ -1,0 +1,23 @@
+.LazyImage {
+  overflow: hidden;
+  &[data-lazy-mode='background-after'] {
+    &:after {
+      transition: opacity 1000ms;
+      // filter: blur(5px);
+      opacity: 1;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    &[data-lazy-loaded='true'] {
+      &:after {
+        // filter: none;
+        opacity: 0;
+      }
+    }
+  }
+}

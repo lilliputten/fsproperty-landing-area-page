@@ -1,0 +1,758 @@
+<!--
+@desc Preview
+@module preview-template-with-column
+@changed 2024.10.10, 20:02
+-->
+<html lang="ru" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Language" content="ru-RU" />
+    <link rel="shortcut icon" href="root/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="assets/d78853e5/jquery.fancybox.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/b7f4f2a8/libraries/Font-Awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/b7f4f2a8/libraries/bootstrap-select/dist/css/bootstrap-select.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/b7f4f2a8/libraries/awesome-bootstrap-checkbox.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/b7f4f2a8/libraries/bootstrap-fileinput/css/fileinput.min.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="assets/b7f4f2a8/libraries/nvd3/nv.d3.min.css"> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/b7f4f2a8/libraries/OwlCarousel/owl-carousel/owl.carousel.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/b7f4f2a8/css/realsite.css" />
+    <link rel="stylesheet" type="text/css" href="assets/b7f4f2a8/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="assets/b7f4f2a8/css/media.css" />
+    <script type="text/javascript" src="assets/e40d29d4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/d78853e5/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="assets/d78853e5/fancyBox.js"></script>
+    <script type="text/javascript" src="assets/d78853e5/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      var baseUrl = '';
+      /*]]>*/
+    </script>
+    <title>Продать элитную недвижимость в Москве</title>
+    <meta
+      name="description"
+      content="Мы предлагаем свои услуги владельцам, которые хотят выгодно и быстро продать свою элитную недвижимость в Москве.  20 лет опыта, более 1200 сделок."
+    />
+    <meta name="keywords" content="Продать элитную недвижимость" />
+    <meta property="og:title" content="Продать элитную недвижимость в Москве" />
+    <meta
+      property="og:description"
+      content="Мы предлагаем свои услуги владельцам, которые хотят выгодно и быстро продать свою элитную недвижимость в Москве.  20 лет опыта, более 1200 сделок."
+    />
+    <meta property="og:image" content="root/logo.fs.jpg" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,latin-ext"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+    />
+    <link rel="shortcut icon" href="root/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png" />
+    <style>
+      body {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        top: 0 !important;
+        left: 0 !important;
+        overflow: auto !important;
+      }
+      .ohota_banner {
+        display: none;
+      }
+      .baner_block_tw {
+        width: 100%;
+        height: 45px;
+        background-color: lightgray;
+        padding: 5px 10px;
+      }
+      @media (min-width: 1400px) {
+        .ohota_bannerXL {
+          display: block;
+        }
+        .baner_block_tw {
+          padding: 5px 18%;
+        }
+      }
+      @media (min-width: 769px) and (max-width: 1399px) {
+        .ohota_bannerL {
+          display: block;
+        }
+      }
+      @media (max-width: 768px) {
+        .ohota_bannerS {
+          display: block;
+        }
+        div.page-wrapper.ohota > div.header.header-standard > div.container {
+          display: none;
+        }
+      }
+      .ohota .map-wrapper,
+      .ohota #filter-container {
+        display: none;
+      }
+    </style>
+    <style type="text/css">
+      .fancybox-margin {
+        margin-right: 17px;
+      }
+      .country-list.hide {
+        display: none;
+      }
+    </style>
+    <!--
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://web.redhelper.ru/connect/v2/css/common.css?v=3.2.1.1606353591205"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://web.redhelper.ru/container/css/skins/material.css?version=3.1.539.1630063113444"
+    />
+    -->
+  </head>
+  <body class="rh-copy-show redhlp_offline redhlp_ready">
+    <div class="page-wrapper">
+      <div class="header header-standard">
+        <div class="header-topbar">
+          <div class="container">
+            <div class="header-topbar-left">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                  <div class="header-title" style="padding-left: 40px">
+                    <a href="" class="logo">
+                      <img
+                        src="uploads/nlogo.webp?v=2"
+                        alt="Realsite"
+                        style="height: 70px; width: auto"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.header-topbar-left -->
+            <div class="header-topbar-right">
+              <div class="row">
+                <div class="col-sm-8 col-xs-12">
+                  <ul class="header-topbar-links" id="yw0">
+                    <li class="listItem">
+                      <a class="listItemLink" href="page/about/">О компании</a>
+                    </li>
+                    <li class="listItem"><a class="listItemLink" href="team/">Команда</a></li>
+                    <li class="listItem"><a class="listItemLink" href="partners/">Партнеры</a></li>
+                    <li class="listItem">
+                      <a class="listItemLink" href="publications/">Новости</a>
+                    </li>
+                    <li class="listItem">
+                      <a class="listItemLink" href="page/services/">Услуги</a>
+                    </li>
+                    <li class="listItem">
+                      <a class="listItemLink" href="page/contacts/">Контакты</a>
+                    </li>
+                    <li class="listItem">
+                      <a class="listItemLink" href="realty/favorite">Избранное</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                  <div class="header-contacts header-contacts-phone">
+                    <a href="tel:84951345699"><small>+7(495) 1-3456-99</small></a>
+                    <br />
+                    <a href="https://wa.me/79168610317" target="_blank"
+                      ><img src="uploads/icons/wp.png" width="24" /></a
+                    >&nbsp;
+                    <a href="https://t.me/FS_PROPERTY_ELITE" target="_blank"
+                      ><img src="uploads/icons/tg.png" width="24"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.header-topbar-right -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.header-topbar -->
+        <div class="container">
+          <div class="header-inner">
+            <div class="header-main">
+              <!-- div class="header-title">
+                    <a href="" class="logo">
+                        <img src="assets/b7f4f2a8/img/logo.png" alt="Realsite">
+                    </a>
+                </div -->
+              <!-- /.header-title -->
+              <div class="header-navigation">
+                <div class="row header-nav">
+                  <div class="col-sm-12 nav-main-wrapper">
+                    <div class="nav-main-title visible-xs">
+                      <a href="">
+                        <img src="assets/b7f4f2a8/img/logo-blue.png" alt="Realsite" />
+                      </a>
+                    </div>
+                    <!-- /.nav-main-title -->
+                    <div class="row">
+                      <div class="col-sm-11">
+                        <div class="nav-main-inner">
+                          <nav>
+                            <ul class="nav nav-pills" id="nav-main">
+                              <li class="listItem has-children">
+                                <a class="listItemLink" href="realty/elite/"
+                                  >Городская<br />
+                                  недвижимость<i class="fa fa-caret-down"></i
+                                ></a>
+                                <div>
+                                  <a class="listItemLink" href="realty/elite/"
+                                    >Городская<br />
+                                    недвижимость<i class="fa fa-caret-down"></i
+                                  ></a>
+                                  <ul class="sub-menu">
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/elite/condos/"
+                                        >Элитные новостройки</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/elite/apartments/"
+                                        >Элитные квартиры</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/elite/rent/">Аренда</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="listItem has-children">
+                                <a class="listItemLink" href="realty/country/"
+                                  >Загородная<br />
+                                  недвижимость<i class="fa fa-caret-down"></i
+                                ></a>
+                                <div>
+                                  <a class="listItemLink" href="realty/country/"
+                                    >Загородная<br />
+                                    недвижимость<i class="fa fa-caret-down"></i
+                                  ></a>
+                                  <ul class="sub-menu">
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/country/cottages/"
+                                        >Загородные дома, поселки</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/country/lands/"
+                                        >Земельные участки</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/country/cottages-rent/">
+                                        Коттеджи в аренду</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="listItem has-children">
+                                <a class="listItemLink" href="realty/commercial/"
+                                  >Коммерческая<br />
+                                  недвижимость<i class="fa fa-caret-down"></i
+                                ></a>
+                                <div>
+                                  <a class="listItemLink" href="realty/commercial/"
+                                    >Коммерческая<br />
+                                    недвижимость<i class="fa fa-caret-down"></i
+                                  ></a>
+                                  <ul class="sub-menu">
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/page/offices-rent/"
+                                        >Аренда офисов</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/page/offices-sale/"
+                                        >Продажа офисов</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/page/trading-space-rent/"
+                                        >Аренда торговых помещений</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/page/trading-space-sale/"
+                                        >Продажа торговых помещений</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a
+                                        class="listItemLink"
+                                        href="realty/page/rental-business-sale/"
+                                        >Продажа арендного бизнеса</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/page/mansions-rent/"
+                                        >Аренда особняков</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/page/mansions-sale/"
+                                        >Продажа особняков</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/page/free_purpose/"
+                                        >Помещения свободного назначения</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="listItem has-children">
+                                <a class="listItemLink" href="realty/abroad/"
+                                  >Курортная<br />
+                                  недвижимость<i class="fa fa-caret-down"></i
+                                ></a>
+                                <div>
+                                  <a class="listItemLink" href="realty/abroad/"
+                                    >Курортная<br />
+                                    недвижимость<i class="fa fa-caret-down"></i
+                                  ></a>
+                                  <ul class="sub-menu">
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/abroad/houses/"
+                                        >Дома, виллы, резиденции</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/abroad/flats/"
+                                        >Апартаменты, квартиры, пентхаусы</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/abroad/commercial/"
+                                        >Коммерческая недвижимость</a
+                                      >
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/abroad/abroad-rent"
+                                        >Аренда</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="listItem has-children">
+                                <a class="listItemLink" href="realty/region/"
+                                  >Региональная<br />
+                                  недвижимость<i class="fa fa-caret-down"></i
+                                ></a>
+                                <div>
+                                  <a class="listItemLink" href="realty/region/"
+                                    >Региональная<br />
+                                    недвижимость<i class="fa fa-caret-down"></i
+                                  ></a>
+                                  <ul class="sub-menu">
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/region/krym/">Крым</a>
+                                    </li>
+                                    <li class="listItem">
+                                      <a class="listItemLink" href="realty/region/sochi/">Сочи</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <!-- /.nav-main-inner -->
+                      </div>
+                      <div class="col-sm-1" style="padding-top: 17px">
+                        <img
+                          src="uploads/area_light2.png"
+                          width="120"
+                          style="position: relative; right: 35px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.nav-main-wrapper -->
+                  <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+              </div>
+              <!-- /.header-navigation -->
+            </div>
+            <!-- /.header-main -->
+          </div>
+          <!-- /.header-inner -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.header-->
+      <div class="main">
+        <!--
+        <div class="container">
+          <div class="row">
+            <div class="content col-sm-8 col-md-9">
+              <ol class="path" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                  <a href="" itemprop="item">
+                    <span itemprop="name">Главная</span>
+                    <meta itemprop="position" content="1" />
+                  </a>
+                </li>
+              </ol>
+        -->
+
+        <link rel="stylesheet" type="text/css" href="assets/b7f4f2a8/css/about.css">
+
+        <!-- CONTENT BEGIN {{{ -->
+
+        {{CONTENT}}
+
+        <!-- }}} CONTENT END -->
+
+            <!--
+            </div>
+            <!-- /.content - ->
+            <div class="sidebar col-sm-4 col-md-3">
+              <div class="widget">
+                <div class="widget-title">
+                  <h2>Контактные данные</h2>
+                </div>
+                <!-- /.widget-title - ->
+                <div class="widget-content">
+                  <p>
+                    FS Property<br />
+                    Москва, Охотный ряд, дом 2<br />
+                    E-mail: <a href="mailto:fsp@fsproperty.ru">fsp@fsproperty.ru</a><br />
+                    Телефон: +7(495) 1-3456-99
+                  </p>
+                </div>
+                <!-- /.widget-content - ->
+              </div>
+              <!-- /.widget - ->
+              <div class="widget">
+                <div class="widget-content">
+                  <ul class="clearfix sharing-buttons">
+                    <li class="no-margin">
+                      <a target="_blank" class="vkontakte" href="https://vk.com/fsproperty"
+                        ><i class="fa fa-left no-margin fa-vk"></i
+                      ></a>
+                    </li>
+                    <li class="no-margin">
+                      <a target="_blank" class="telegram" href="https://t.me/fspropertybest"
+                        ><i class="fa fa-left no-margin fa-telegram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.widget-content - ->
+              </div>
+              <!-- /.widget - ->
+            </div>
+            <!-- /.sidebar - ->
+          </div>
+          <!-- /.row - ->
+        </div>
+        <!- - /.container -->
+      </div>
+      <!-- /.main -->
+      <div id="footer-top" class="footer footer-simple">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-top-inner">
+              <div class="row">
+                <div class="widget col-sm-3">
+                  <h2>ФСП</h2>
+                  <nav>
+                    <ul class="nav nav-stacked" id="yw1">
+                      <li class="listItem">
+                        <a class="listItemLink" href="page/about/">О компании</a>
+                      </li>
+                      <li class="listItem"><a class="listItemLink" href="team/">Команда</a></li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="partners/">Партнеры</a>
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="publications/">Новости</a>
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="page/services/">Услуги</a>
+                      </li>
+                      <li class="listItem"><a class="listItemLink" href="vacancy/">Вакансии</a></li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="page/contacts/">Контакты</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="widget col-sm-2">
+                  <h2>
+                    Городская<br />
+                    недвижимость
+                  </h2>
+                  <nav>
+                    <ul class="nav nav-stacked" id="yw2">
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/elite/condos/">Элитные новостройки</a>
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/elite/apartments/">Элитные квартиры</a>
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/elite/rent/">Аренда</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="widget col-sm-2">
+                  <h2>
+                    Загородная<br />
+                    недвижимость
+                  </h2>
+                  <nav>
+                    <ul class="nav nav-stacked" id="yw3">
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/country/cottages/"
+                          >Загородные дома, поселки</a
+                        >
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/country/lands/">Земельные участки</a>
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/country/cottages-rent/">
+                          Коттеджи в аренду</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="widget col-sm-2">
+                  <h2>
+                    Коммерческая<br />
+                    недвижимость
+                  </h2>
+                  <nav>
+                    <ul class="nav nav-stacked" id="yw4">
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/page/offices-rent/">Аренда офисов</a>
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/page/offices-sale/">Продажа офисов</a>
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/page/trading-space-rent/"
+                          >Аренда торговых помещений</a
+                        >
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/page/trading-space-sale/"
+                          >Продажа торговых помещений</a
+                        >
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/page/rental-business-sale/"
+                          >Продажа арендного бизнеса</a
+                        >
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/page/mansions-rent/"
+                          >Аренда особняков</a
+                        >
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/page/mansions-sale/"
+                          >Продажа особняков</a
+                        >
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/page/free_purpose/"
+                          >Помещения свободного назначения</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="widget col-sm-3">
+                  <h2>
+                    Зарубежная<br />
+                    недвижимость
+                  </h2>
+                  <nav>
+                    <ul class="nav nav-stacked" id="yw5">
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/abroad/houses/"
+                          >Дома, виллы, резиденции</a
+                        >
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/abroad/flats/"
+                          >Апартаменты, квартиры, пентхаусы</a
+                        >
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/abroad/commercial/"
+                          >Коммерческая недвижимость</a
+                        >
+                      </li>
+                      <li class="listItem">
+                        <a class="listItemLink" href="realty/abroad/abroad-rent">Аренда</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.footer-top-inner -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.footer-top -->
+      </div>
+      <!-- /.footer-simple -->
+      <div id="footer-top-2" class="footer">
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom-inner">
+              <div class="row">
+                <div class="widget col-sm-4">
+                  <h2>Агентство элитной недвижимости</h2>
+                  <p>
+                    © 2023. ООО «ФСП».<br />
+                    Все права защищены.
+                  </p>
+                  <ul class="clearfix sharing-buttons">
+                    <li>
+                      <a target="_blank" class="vkontakte" href="https://vk.com/fsproperty"
+                        ><i class="fa fa-left fa-vk"></i
+                        ><span class="social-name">Вконтакте</span></a
+                      >
+                    </li>
+                    <li>
+                      <a target="_blank" class="telegram" href="https://t.me/fspropertybest"
+                        ><i class="fa fa-left fa-telegram"></i
+                        ><span class="social-name">Telegram</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="widget col-sm-4">
+                  <h2>Контактная информация</h2>
+                  <p>
+                    FS Property<br />
+                    Москва, Охотный ряд, дом 2<br />
+                    E-mail: <a href="mailto:fsp@fsproperty.ru">fsp@fsproperty.ru</a><br />
+                    Телефон: <a href="tel:84951345699"><small>+7(495) 1-3456-99</small></a>
+                  </p>
+                </div>
+                <div class="widget col-sm-4"></div>
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.footer-bottom-inner -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.footer-bottom -->
+        <div class="footer-bar">
+          <div class="container center">
+            <a class="scroll-top"><i class="fa fa-angle-up"></i></a>
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.footer-bar -->
+      </div>
+      <!-- /.footer -->
+    </div>
+    <!-- /.page-wrapper-->
+    <script
+      type="text/javascript"
+      src="assets/b7f4f2a8/libraries/jquery-transit/jquery.transit.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/b7f4f2a8/libraries/bootstrap/assets/javascripts/bootstrap/dropdown.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/b7f4f2a8/libraries/bootstrap/assets/javascripts/bootstrap/collapse.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/b7f4f2a8/libraries/bootstrap-select/dist/js/bootstrap-select.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/b7f4f2a8/libraries/bootstrap-fileinput/js/fileinput.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/b7f4f2a8/libraries/autosize/jquery.autosize.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/b7f4f2a8/libraries/isotope/dist/isotope.pkgd.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/b7f4f2a8/libraries/OwlCarousel/owl-carousel/owl.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/b7f4f2a8/libraries/jquery.scrollTo/jquery.scrollTo.min.js"
+    ></script>
+    <!-- <script type="text/javascript" src="assets/b7f4f2a8/libraries/nvd3/lib/d3.v3.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/b7f4f2a8/libraries/nvd3/nv.d3.min.js"></script> -->
+    <script type="text/javascript" src="assets/b7f4f2a8/js/realsite.js"></script>
+  </body>
+</html>

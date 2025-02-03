@@ -1,0 +1,40 @@
+@use 'sass:color';
+
+@import 'variables';
+
+@function rgbComponents($color) {
+  @return color.channel($color, 'red', $space: rgb) color.channel($color, 'green', $space: rgb)
+    color.channel($color, 'blue', $space: rgb);
+}
+
+:root {
+  // Colors...
+
+  --appId: #{$appId};
+  --appFolder: #{$appFolder};
+  --uploadsFolder: #{$uploadsFolder};
+
+  --bgDarkColor: #{$bgDarkColor};
+  --bgDarkRGB: #{rgbComponents($bgDarkColor)};
+
+  --headerDarkColor: #{$headerDarkColor};
+  --headerDarkRGB: #{rgbComponents($headerDarkColor)};
+
+  --goldColor: #{$goldColor};
+  --goldRGB: #{rgbComponents($goldColor)};
+
+  --grayLightColor: #{$grayLightColor};
+  --moodyMediumColor: #{$moodyMediumColor};
+  --buttonRedColor: #{$buttonRedColor};
+
+  // Fonts...
+
+  --softFont: #{$softFont};
+  --softFontIt: #{$softFontIt};
+
+  // Timeouts...
+
+  --transitionTimeMs: #{$transitionTimeMs};
+  --animationTimeMs: #{$animationTimeMs};
+  --disappearTimeMs: #{$disappearTimeMs};
+}

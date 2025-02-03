@@ -1,0 +1,76 @@
+@import '../variables';
+
+.ServicesSection {
+  background-color: $servicesDarkColor;
+  .ServicesContent {
+    margin: 4em 2em;
+  }
+  .ItemsRow {
+    margin-top: 4em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    @media (width >= $mdTreshold) {
+      flex-direction: row;
+    }
+    > li {
+      flex: 1;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      color: var(--goldColor);
+      margin: 0;
+    }
+  }
+  .ItemImg {
+    user-select: none;
+    position: relative;
+    height: 120px;
+    border-radius: 8px;
+    &,
+    &:after {
+      // LazyImage:after
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &#estimate {
+      &,
+      &:after {
+        background-image: url('../images/Services/thumbs/estimate.jpg');
+      }
+    }
+    &#agreement {
+      &,
+      &:after {
+        background-image: url('../images/Services/thumbs/agreement.jpg');
+      }
+    }
+    &#photo {
+      &,
+      &:after {
+        background-image: url('../images/Services/thumbs/photo.jpg');
+      }
+    }
+    &#preparation {
+      &,
+      &:after {
+        background-image: url('../images/Services/thumbs/preparation.jpg');
+      }
+    }
+    &#support {
+      &,
+      &:after {
+        background-image: url('../images/Services/thumbs/support.jpg');
+      }
+    }
+  }
+  .ItemText {
+    font-family: var(--softFont);
+    font-size: 1.5em;
+    line-height: 1.3;
+    text-align: center;
+  }
+}
