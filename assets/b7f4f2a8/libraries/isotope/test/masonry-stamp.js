@@ -1,0 +1,1 @@
+!function(){"use strict";test("Masonry stamp",(function(){var t=new Isotope("#masonry-stamp",{layoutMode:"masonry",itemSelector:".item",stamp:".stamp"});function e(t,e,s){var m=t.element,n=parseInt(m.style.left,10),o=parseInt(m.style.top,10);deepEqual([n,o],[e,s],"item position "+e+", "+s)}e(t.items[0],0,0),e(t.items[1],0,30),e(t.items[2],60,45),e(t.items[3],120,45)}))}();

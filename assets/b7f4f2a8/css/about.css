@@ -1,0 +1,61 @@
+@font-face{
+    font-family: MinionPro-Regular;
+    src: url(../fonts/MinionPro-Regular.otf);	
+}
+@font-face{
+    font-family: MinionPro-It;
+    src: url(../fonts/MinionPro-It.otf);	
+}
+@font-face{
+    font-family: MyriadPro-Bold;
+    src: url(../fonts/Myriad-Pro-Bold.ttf);	
+}
+.about-page {
+    background: #131014;
+}
+.about-page h1{
+    font-family: MinionPro-It;
+    color: #fff;
+    font-size: 36px;
+}
+.about-page h2 {
+    font-family: MyriadPro-Bold;
+    color: #a39675;
+    margin: 10px 0px 5px 0px;
+    font-size: 30px;
+}
+.about-page h2 span {
+    font-family: MinionPro-Regular;
+}
+.about-page p {
+    font-family: MinionPro-Regular;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 17px;
+    max-width: 615px;
+}
+
+.about-page p.signature {
+    font-family: MinionPro-Regular;
+    width: 187px;
+    color: #ffffff;
+    text-align: right;
+    float: right;
+    text-transform: uppercase;
+    margin-right: 60px;
+}
+.about-page p.signature span{
+    font-weight: bold;
+}
+.mar {margin-top: 20px;}
+
+.about-page .sidebar img {
+    margin: 17px 0px 10px 0px;
+    padding: 0;
+}
+@media only screen and (max-width: 480px) {
+    .about-page .sidebar img {
+        width: 250px;
+        height: 350px;
+    }
+}

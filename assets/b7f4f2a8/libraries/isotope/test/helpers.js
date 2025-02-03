@@ -1,0 +1,1 @@
+!function(){"use strict";Isotope.defaults.layoutMode="fitRows";var t=document.documentElement;window.getText=t.textContent?function(t){return t.textContent}:function(t){return t.innerText}}();
