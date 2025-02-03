@@ -47,14 +47,14 @@
     }
     .Title {
       color: var(--goldColor);
-      font-size: 10vw;
-      font-family: var(--softFontIt);
+      font-size: 6vw;
+      font-family: var(--softFont);
+      text-transform: uppercase;
     }
     .SubTitle {
-      color: var(--goldColor);
-      font-size: 2em;
-      font-size: 5vw;
-      opacity: 0.3;
+      color: #fff;
+      font-size: 3vw;
+      line-height: 1.3;
     }
     .LandingButton {
       font-size: 1em;
@@ -70,7 +70,59 @@
       }
     }
   }
+
+  .AreaLogo {
+    text-align: center;
+    display: flex;
+    margin: 2.25em 0;
+    &,
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    a {
+      .Logo {
+        user-select: none;
+        width: 40vw;
+        height: 10vw;
+        background-image: url('../images/Hero/area-logo.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      span {
+        display: block;
+        color: white;
+        &.Text2 {
+          color: var(--goldColor);
+        }
+      }
+      transition: all var(--transitionTimeMs);
+      &:hover {
+        &,
+        span {
+          text-decoration: none;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
   @media (width >= $basicTreshold) {
+  .AreaLogo {
+    &,
+    a {
+      align-items: flex-start;
+    }
+    a {
+      .Logo {
+        width: 23vw;
+        height: 6vw;
+      }
+    }
+  }
+
     & {
       flex-direction: row;
     }
@@ -85,11 +137,11 @@
         text-align: left;
       }
       .Title {
-        font-size: 4vw;
-        font-family: $softFontIt;
+        font-size: 3vw;
+        // font-family: $softFontIt;
       }
       .SubTitle {
-        font-size: 2vw;
+        font-size: 1.4vw;
       }
       .LandingButton {
         font-size: 1.25em;
@@ -98,4 +150,5 @@
       }
     }
   }
+
 }
