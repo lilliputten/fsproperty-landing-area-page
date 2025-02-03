@@ -1,13 +1,15 @@
 <!--
-@since 2024.10.06, 22:56
-@changed 2024.10.06, 22:56
+@since 2025.02.03, 19:41
+@changed 2025.02.03, 19:41
 -->
 
-# Certifico tilda site compiling assets
+# FS-Property Yupi landing page project for AREA membership
 
-TODO: Describe workflow here.
+- Version: 0.0.0
+- Last changes timestamp: 2025.02.03 19:41:02 +0300
 
-- Version: 0.0.15
-- Last changes timestamp: 2024.10.21 19:36 +0300
+## Resources
 
-TODO: Add the project description.
+Public demo site: https://fsproperty-landing-area-page.lilliputten.ru/
+
+Repository: https://github.com/lilliputten/fsproperty-landing-area-page

@@ -6,7 +6,7 @@
 // NOTE: Templates are including only for dev-mode update
 import './include-template.html';
 
-import './app-info.scss';
+import './project-info.scss';
 import './variables/variables-expose.scss';
 
 import './misc-styles';

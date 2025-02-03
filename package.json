@@ -1,10 +1,10 @@
 {
-  "name": "fsproperty-landing-compile",
-  "version": "0.0.15",
-  "timetag": "241021-1936",
-  "timestamp": "2024.10.21 19:36 +0300",
-  "changed": "2024.10.13, 18:56",
-  "description": "FS Property Yupi landing page project",
+  "name": "fsproperty-landing-area-page",
+  "version": "0.0.0",
+  "timetag": "250203-1941",
+  "timestamp": "2025.02.03 19:41:02 +0300",
+  "changed": "2025.02.03, 20:22",
+  "description": "FS-Property Yupi landing page project for AREA membership",
   "main": "index.html",
   "author": "lilliputten@gmail.com",
   "license": "MIT",
@@ -12,10 +12,10 @@
   "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lilliputten/fsproperty-landing-compile.git"
+    "url": "git@github.com:lilliputten/fsproperty-landing-area-page.git"
   },
   "bugs": {
-    "url": "git@github.com:lilliputten/fsproperty-landing-compile.git/issues"
+    "url": "git@github.com:lilliputten/fsproperty-landing-area-page.git/issues"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.9",
@@ -26,6 +26,7 @@
     "@types/jquery-mask-plugin": "^1.14.6",
     "@types/node": "^22.7.4",
     "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "concurrently": "^9.1.2",
     "copy-webpack-plugin": "^12.0.2",
     "cross-env": "^7.0.3",
     "css-loader": "^7.1.2",
@@ -81,6 +82,7 @@
     "watch-build": "echo --Watch all assets /webpack/-- && webpack --watch",
     "watch-build-dev": "echo --Watch all assets in debug mode /webpack/-- && cross-env DEV=true webpack --watch",
     "start": "echo --Run dev server-- && serve .",
+    "dev": "echo --Run all dev tasks concurrently-- && concurrently --kill-others \"pnpm watch-build-dev\" \"pnpm serve-dev\"",
     "clear-build": "echo --Clear build folder-- && rimraf -I -g build/* && echo Build folder has been cleaned",
     "clear-build-dev": "echo --Clear debug build folder-- && rimraf -I -g build-dev/* && echo Debug build folder has been cleaned",
     "clear-cache": "echo --Clear caches-- && rimraf node_modules/.cache && echo Cleared webpack cache",

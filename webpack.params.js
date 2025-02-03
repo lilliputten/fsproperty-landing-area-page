@@ -23,30 +23,24 @@ const includeTemplateFile = 'src/include-template.html';
 // const previewTemplateFile = 'src/preview-template-with-column.html';
 const previewTemplateFile = 'src/preview-template-no-column.html';
 
-const appInfoFile = 'src/app-info.json';
+const appInfoFile = 'src/project-info.json';
 const appInfoContent = fs.readFileSync(path.resolve(__dirname, appInfoFile), {
   encoding: 'utf8',
 });
 const appInfo = JSON.parse(appInfoContent);
-const { projectName, version, timestamp, timetag } = appInfo;
-const appVersionHash = [
-  [
-    // Debug & dev flags...
-    isDebug && 'DEBUG',
-    isDev && 'DEV',
-  ]
-    .filter(Boolean)
-    .join(','),
-  // Version...
-  projectName + ' v.' + version + ' / ' + timestamp,
-]
-  .filter(Boolean)
-  .join(': ');
+const { projectInfo } = appInfo;
+const appVersionHash = projectInfo;
+// fsproperty-landing-area-page v.0.0.0 / 2025.02.03 19:41:02 +0300
+const matches = projectInfo.match(/^(\S+) v\.(\S+) \/ (.*)$/);
+matches.shift();
+// 'fsproperty-landing-area-page', '0.0.0', '2025.02.03 19:41:02 +0300'
+const [projectId, version, timestamp] = matches;
+const timetag = timestamp.replace(/^..(\d+)\.(\d+)\.(\d+)[, -]*(\d+):(\d+).*/, '$1$2$3-$4$5');
 const appVersionTag = 'v.' + version + '-' + timetag;
 const outPath = isDev ? 'build-dev' : 'build';
 
-const appId = 'for-owners';
-const appFolder = `landing-${appId}`;
+const appId = 'landing-area';
+const appFolder = `${appId}`;
 const uploadsFolder = `uploads/${appFolder}`;
 
 /** Assets target path */
@@ -113,6 +107,7 @@ module.exports = {
 
   outPath,
 
+  projectId,
   appId,
   appFolder,
   uploadsFolder,

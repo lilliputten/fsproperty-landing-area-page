@@ -30,6 +30,7 @@ const {
   scriptsAssetFile,
   stylesAssetFile,
   appFolder,
+  uploadsFolder,
 } = require('./webpack.params');
 
 /** Exclusions for copy plugin */
@@ -109,9 +110,17 @@ module.exports = {
                *   .filter(Boolean)
                *   .join('\n'),
                */
+              api: 'modern',
               sassOptions: {
                 // @see https://github.com/sass/node-sass#outputstyle
                 outputStyle: minimizeAssets ? 'compressed' : 'expanded',
+                quietDeps: true,
+                // silenceDeprecations: [
+                //   // @see node_modules/sass/types/deprecations.d.ts
+                //   'import',
+                //   'color-functions',
+                //   'global-builtin',
+                // ],
               },
             },
           },
@@ -147,7 +156,7 @@ module.exports = {
         { from: appInfoFile, to: `uploads/${appFolder}/` },
         { from: 'src/images', to: `uploads/${appFolder}/images`, globOptions },
         { from: 'public', globOptions },
-        { from: 'public-uploads', to: `uploads/landing-for-owners`, globOptions },
+        { from: 'public-uploads', to: uploadsFolder, globOptions },
       ],
     }),
     new HtmlWebpackPlugin({
